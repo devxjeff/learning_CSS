@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    border: 2px dashed rgb(15, 215, 42);
+    padding: 1.5rem 2em;
+    margin: 50px;
+}
+.container {
+    border:3px dashed red;
+    border-top: solid 5px green;
+    border-right: dotted blue 6px;
+    padding: 30px;
+    font-size: 1.5rem;
+    /* margin-top: 1.5rem;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 2em; */
+    margin: 2em;
+    
+}
+body{
+    
+    background-color: black;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+  
+}
+    
+
+ 
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    text-decoration-color: aqua;
+    padding: 0.5rem;
+    border-radius: 50px;
+    
+    border: 3px dashed blue;
+    cursor: pointer;
+}
+
+a:visited{
+    color: rgb(22, 201, 189);
+}
+
+a:hover{
+    color: green;
+    text-decoration: underline;
+}
+a:active{
+    color: indigo;
+}
+
+
+ol{
+    list-style-type: square;
+}
+ 
+
+/*you can also decide what the  content of the marker is 
+and also for the specificty you indicate the type of list
+like this     ul::marker{  }  */
+
