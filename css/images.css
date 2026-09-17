@@ -5,11 +5,44 @@
     box-sizing: border-box;
 }
 img{display: block;}
+
 body{
     font-family: serif;
     min-height:100vh ;
-
+    background-color: aliceblue;
+  /*   background-image:url(../images/c2.jfif)
+    ,linear-gradient(to left,aliceblue, steelblue,lightgreen);
+    background-repeat: repeat-y,no-repeat;
+    background-position: right center;
+    background-size: 20% ,auto; */
 }
+ .hero{
+    border-bottom: 2px solid black;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: slateblue;
+    background-image: url(../images/goku-beast.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .nowrep{white-space: nowrap;}
+
+ .h1{
+    font-size: 500%;
+    color:white;
+   /*  text-shadow: 2px 2px 5px black;
+    background-color: rgba(0, 94, 255, 0.169); */
+ }
+ .offscreen{
+    position: absolute;
+    left: -100000px;
+ }
+
 .profile-pic-figure{
     width: 35%;
 
@@ -19,6 +52,7 @@ body{
     min-width: 100px;
     height: auto;
     border: double 5px gray;
+    border-radius: 50%;
 }
 
 
@@ -31,4 +65,16 @@ body{
 .example img{
     width: 25%;
     height: auto;
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url(../images/goku-beast.png);
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: hsla(0, 0%, 0%, 0.203);
 }
