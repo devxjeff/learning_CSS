@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{display: block;}
+body{
+    font-family: serif;
+    min-height:100vh ;
+
+}
+.profile-pic-figure{
+    width: 35%;
+
+}
+.profile-pic-figure img{
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+    border: double 5px gray;
+}
+
+
+.example{
+    margin-top: 1rem;
+    padding-left: 23px;
+    border: 1px solid red;
+}
+
+.example img{
+    width: 25%;
+    height: auto;
+}
