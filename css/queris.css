@@ -5,5 +5,82 @@
     box-sizing: border-box;
 }
 body{
+    font-size: 1.5rem;
     font-family: serif;
-    min-height:100vh ;}
+    min-height:100vh ;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569 );
+    display: flex;
+    flex-direction: column;
+}
+
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+}
+header,footer{
+    position: sticky;
+    background-color: #1e2938;
+    color: whitesmoke;
+}
+header{
+    top: 0;
+}
+
+nav{
+    background-color: white;
+    color: black;
+    padding: 0,5rem;
+    border-bottom:  2px solid black;
+}
+main{
+    flex-grow: 1;
+}
+footer{
+    bottom: 0;
+}
+@media screen and (min-width:340px) {
+    body{background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick)}
+}
+
+@media screen and (min-width:567px) {
+    body{background-color: green;
+        background-image: radial-gradient(whitesmoke,green)
+    }
+  
+}
+/* meduim */
+@media screen and (min-width:768px) {
+    body{background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold)
+    }
+   
+}
+/* large */
+@media screen and (min-width:992px) {
+    body{background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick)
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    body{background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke,rebeccapurple)}
+}
+
+@media screen and (min-aspect-ratio:7/5 ) {
+    body{background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke,rebeccapurple)
+}
+}
+/*  syntax: 
+@media type and(condition:breakpoint){}
+css rules 
+
+ @media  and (min-width:481px) {}
+  @media  and (Oreintation:landscpe) {} 
+@media  and (min-aspect-ratio:7/4) {}  */
+/* so the aim of css queries is to help our webpage to adapt to any screen phone tablet desktop or any screen 
+when styling you must mind the arrangment*/
